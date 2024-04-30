@@ -1,4 +1,9 @@
-1.
-2.
-3.
-4.
+1. third_set_ls_1
+2. second_set_mv_1
+3. second_set_chmod_2
+4. second_set_pwd_3
+5. second_set_ping_4
+6. first_set_grep_1
+7. first_set_ps_2
+8. first_set_kill_3
+9. first_set_diff_4
