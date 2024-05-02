@@ -1,9 +1,9 @@
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
+1.gdb program
+2.break [location]
+3.next / n
+4.step / s
+5.continue / c
+6.print [value]
+7.display [value]
+8.info locals
+9.quit / q
