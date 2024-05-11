@@ -22,3 +22,11 @@ main:
 
 factorial:
     # YOUR CODE HERE
+    addi t2, a0, -1  # t2 = a0 - 1
+loop:
+    beq t2, x0, finish
+    mul a0 a0 t2    # n = n * (n - 1)
+    addi t2, t2, -1
+    jal x0 loop
+finish:
+    ret
