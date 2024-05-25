@@ -1,0 +1,5 @@
+1. lw t0, 8(s0) -> lw a0, 8(s0)
+2. add t1, s0, x0 -> lw t1, 0(s0)
+3. 4 bytes per data so that t0 should Multiply by 4 (slli t0, t0, 2)
+4. don't save ra and t1 before jalr s1
+5. lw a1, 0(s1) -> mv a1, s1
