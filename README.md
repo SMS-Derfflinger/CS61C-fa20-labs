@@ -16,7 +16,9 @@ This repository contains my solutions to the CS61C-fa20 labs
 - [x] lab04 RISCV Functions, Pointers
     * Practice debugging RISC-V assembly code.
     * Write RISC-V functions that use pointers.
-- [ ] lab05 Logisim
+- [x] lab05 Logisim
+    * Practice designing and debugging basic digital logic circuits in Logisim
+    * Gain experience designing FSMs and implementing them as digital logic
 - [ ] lab06 Pipelining and CPU
 - [ ] lab07 Caches
 - [ ] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
