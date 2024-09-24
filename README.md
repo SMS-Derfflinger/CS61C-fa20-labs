@@ -19,7 +19,8 @@ This repository contains my solutions to the CS61C-fa20 labs
 - [x] lab05 Logisim
     * Practice designing and debugging basic digital logic circuits in Logisim
     * Gain experience designing FSMs and implementing them as digital logic
-- [ ] lab06 Pipelining and CPU
+- [x] lab06 Pipelining and CPU
+    * Add a register to divide the multiplication and addition stages up to Complete the sub-circuit pipelined.
 - [ ] lab07 Caches
 - [ ] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
 - [ ] lab09 SIMD Instructions
