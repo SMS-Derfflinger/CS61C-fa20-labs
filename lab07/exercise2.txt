@@ -1,5 +1,5 @@
-1.
-2.
+1. ijk, ikj
+2. ikj, kij
 
 --- lines below are ignored by the AG ---
 
