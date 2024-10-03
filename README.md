@@ -21,7 +21,10 @@ This repository contains my solutions to the CS61C-fa20 labs
     * Gain experience designing FSMs and implementing them as digital logic
 - [x] lab06 Pipelining and CPU
     * Add a register to divide the multiplication and addition stages up to Complete the sub-circuit pipelined.
-- [ ] lab07 Caches
+- [x] lab07 Caches
+    * Analyze how memory access patterns determine cache hit rates
+    * Analyze and discover which memory access patterns produce GOOD hit rates
+    * Analyze hit rates for caches and be able to optimize code accesses to produce good hit rates
 - [ ] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
 - [ ] lab09 SIMD Instructions
 - [ ] lab10 Thread Level Parallelism
