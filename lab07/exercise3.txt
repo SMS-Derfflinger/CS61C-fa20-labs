@@ -1,20 +1,20 @@
 --- not autograded ---
 
 Part 1
-    blocksize = 20, n = 100: 
-    blocksize = 20, n = 1000: 
-    blocksize = 20, n = 2000: 
-    blocksize = 20, n = 5000: 
-    blocksize = 20, n = 10000: 
+    blocksize = 20, n = 100: 0.004 milliseconds, 0.004 milliseconds
+    blocksize = 20, n = 1000: 0.817 milliseconds, 0.8 milliseconds
+    blocksize = 20, n = 2000: 11.462 milliseconds, 5.279 milliseconds
+    blocksize = 20, n = 5000: 179.132 milliseconds, 35.288 milliseconds
+    blocksize = 20, n = 10000: 897.094 milliseconds, 158.228 milliseconds
 
-    Checkoff Question 1:
-    Checkoff Question 2:
+    Checkoff Question 1: n > 1000
+    Checkoff Question 2: Improve cache hit rate
 
 Part 2
-    blocksize = 50, n = 10000:
-    blocksize = 100, n = 10000:
-    blocksize = 500, n = 10000:
-    blocksize = 1000, n = 10000:
-    blocksize = 5000, n = 10000:
+    blocksize = 50, n = 10000: 828.66 milliseconds, 200.55 milliseconds
+    blocksize = 100, n = 10000: 860.681 milliseconds, 176.657 milliseconds
+    blocksize = 500, n = 10000: 811.861 milliseconds, 153.822 milliseconds
+    blocksize = 1000, n = 10000: 838.484 milliseconds, 182.98 milliseconds
+    blocksize = 5000, n = 10000: 826.229 milliseconds, 676.894 milliseconds
 
-    Checkoff Question 3:
+    Checkoff Question 3: First raise and then lower, because Spatial locality is lost when the block size is small, and temporal locality is lost when it is large.
