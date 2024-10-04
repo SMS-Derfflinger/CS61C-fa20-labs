@@ -25,7 +25,8 @@ This repository contains my solutions to the CS61C-fa20 labs
     * Analyze how memory access patterns determine cache hit rates
     * Analyze and discover which memory access patterns produce GOOD hit rates
     * Analyze hit rates for caches and be able to optimize code accesses to produce good hit rates
-- [ ] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
+- [x] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
+    * Analyze TLB hit rate and Page Table hit rate and figure out what accesses optimize these values.
 - [ ] lab09 SIMD Instructions
 - [ ] lab10 Thread Level Parallelism
 - [ ] lab11 Spark/Dependability
