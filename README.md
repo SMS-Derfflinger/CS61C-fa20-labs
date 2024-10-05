@@ -27,7 +27,10 @@ This repository contains my solutions to the CS61C-fa20 labs
     * Analyze hit rates for caches and be able to optimize code accesses to produce good hit rates
 - [x] lab08 OS (context switch), I/O, DMA, Disks, Networking & Virtual Memory
     * Analyze TLB hit rate and Page Table hit rate and figure out what accesses optimize these values.
-- [ ] lab09 SIMD Instructions
+- [x] lab09 SIMD Instructions
+    * Learn about and use various SIMD functions to perform data level parallelism
+    * Write code to SIMD-ize certain functions
+    * Learn about loop-unrolling and why it works
 - [ ] lab10 Thread Level Parallelism
 - [ ] lab11 Spark/Dependability
 

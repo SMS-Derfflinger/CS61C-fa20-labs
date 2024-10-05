@@ -84,9 +84,40 @@ long long int sum_simd_unrolled(int vals[NUM_ELEMS]) {
 	for(unsigned int w = 0; w < OUTER_ITERATIONS; w++) {
 		/* COPY AND PASTE YOUR sum_simd() HERE */
 		/* MODIFY IT BY UNROLLING IT */
+        int sums[4];
+        __m128i sum4 = _mm_setzero_si128();
+        for (unsigned int i = 0; i < NUM_ELEMS / 16 * 16; i += 16) {
+            __m128i temp = _mm_loadu_si128((__m128i*)(vals + i));
+            __m128i mask = _mm_cmpgt_epi32(temp, _127);
+            temp = _mm_and_si128(temp, mask);
+            sum4 = _mm_add_epi32(sum4, temp);
+
+            temp = _mm_loadu_si128((__m128i*)(vals + i + 4));
+            mask = _mm_cmpgt_epi32(temp, _127);
+            temp = _mm_and_si128(temp, mask);
+            sum4 = _mm_add_epi32(sum4, temp);
+
+            temp = _mm_loadu_si128((__m128i*)(vals + i + 8));
+            mask = _mm_cmpgt_epi32(temp, _127);
+            temp = _mm_and_si128(temp, mask);
+            sum4 = _mm_add_epi32(sum4, temp);
+
+            temp = _mm_loadu_si128((__m128i*)(vals + i + 12));
+            mask = _mm_cmpgt_epi32(temp, _127);
+            temp = _mm_and_si128(temp, mask);
+            sum4 = _mm_add_epi32(sum4, temp);
+        }
+        _mm_storeu_si128(sums, sum4);
 
 		/* You'll need 1 or maybe 2 tail cases here. */
-
+        for (int i = NUM_ELEMS / 16 * 16; i < NUM_ELEMS; i++) {
+            if(vals[i] >= 128) {
+				result += vals[i];
+			}
+        }
+        for (int i = 0; i < 4; i++) {
+            result += sums[i];
+        }
 	}
 	clock_t end = clock();
 	printf("Time taken: %Lf s\n", (long double)(end - start) / CLOCKS_PER_SEC);
