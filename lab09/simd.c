@@ -51,11 +51,26 @@ long long int sum_simd(int vals[NUM_ELEMS]) {
 	long long int result = 0;				   // This is where you should put your final result!
 	/* DO NOT DO NOT DO NOT DO NOT WRITE ANYTHING ABOVE THIS LINE. */
 	
+    int sums[4];
 	for(unsigned int w = 0; w < OUTER_ITERATIONS; w++) {
 		/* YOUR CODE GOES HERE */
-
+        __m128i sum4 = _mm_setzero_si128();
+        for (unsigned int i = 0; i < NUM_ELEMS / 4 * 4; i += 4) {
+            __m128i temp = _mm_loadu_si128((__m128i*)(vals + i));   // change the pointer to value
+            __m128i mask = _mm_cmpgt_epi32(temp, _127);
+            temp = _mm_and_si128(temp, mask);
+            sum4 = _mm_add_epi32(sum4, temp);
+        }
+        _mm_storeu_si128(sums, sum4);
 		/* You'll need a tail case. */
-
+        for (int i = NUM_ELEMS / 4 * 4; i < NUM_ELEMS; i++) {
+            if(vals[i] >= 128) {
+				result += vals[i];
+			}
+        }
+        for (int i = 0; i < 4; i++) {
+            result += sums[i];
+        }
 	}
 	clock_t end = clock();
 	printf("Time taken: %Lf s\n", (long double)(end - start) / CLOCKS_PER_SEC);
