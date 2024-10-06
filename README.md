@@ -31,7 +31,9 @@ This repository contains my solutions to the CS61C-fa20 labs
     * Learn about and use various SIMD functions to perform data level parallelism
     * Write code to SIMD-ize certain functions
     * Learn about loop-unrolling and why it works
-- [ ] lab10 Thread Level Parallelism
+- [x] lab10 Thread Level Parallelism
+    * Learn about basic OpenMP directives.
+    * Learn about basic multi-processing programming.
 - [ ] lab11 Spark/Dependability
 
 You can see the introductions of these labs on the course's home page: https://inst.eecs.berkeley.edu/~cs61c/fa20/
