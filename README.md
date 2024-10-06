@@ -34,6 +34,16 @@ This repository contains my solutions to the CS61C-fa20 labs
 - [x] lab10 Thread Level Parallelism
     * Learn about basic OpenMP directives.
     * Learn about basic multi-processing programming.
-- [ ] lab11 Spark/Dependability
+- [ ] lab11 Spark/Dependability (not available)
 
-You can see the introductions of these labs on the course's home page: https://inst.eecs.berkeley.edu/~cs61c/fa20/
+## project
+
+- [x] proj1 Conway's Game of Life, in RGB!
+    * At this reposity: [CS61C-fa20-proj1](https://github.com/SMS-Derfflinger/CS61C-fa20-proj1)
+- [x] proj2 RISC-V assembly
+    * At this reposity: [CS61C-fa20-proj2](https://github.com/SMS-Derfflinger/CS61C-fa20-proj2)
+- [x] proj3 CS61CPU
+    * At this reposity: [CS61C-fa20-proj3](https://github.com/SMS-Derfflinger/CS61C-fa20-proj3)
+- [ ] proj4 numc (not available)
+
+You can see the introduction of this project on the course's home page: [course website](https://cs61c.org/fa20/), or in this website: [cs61c](https://www.learncs.site/docs/curriculum-resource/cs61c).
